@@ -1,0 +1,24 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+/* ----------- WHOLE DOCUMENT  ----------- */
+* {
+	font-family: 'Open Sans', sans-serif;
+}
+
+body {
+	margin: 0px;
+}
+
+
+
+/* ----------- MAIN BODY  ----------- */
+#main-wrapper {
+	width: 600px;
+	height: 600px;
+}
+
+
+
+/* ----------- NAVIGATION  ----------- */

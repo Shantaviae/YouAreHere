@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html>
+  	<head>
+      <meta charset="utf-8">
+  		<title> You Are Here </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+  		<link href ="CSS/style.css" rel="stylesheet" type="text/css"></link>
+      <link href ="CSS/jquery.mobile-1.4.1.min.css" rel="stylesheet" type="text/css"></link>
+      <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+  		<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+      <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>	
+      <script src="JS/jquery.mobile-1.4.1.min.js"></script>
+      <script src="JS/jquery.mobile-1.4.1.min.map"></script>
+  		<script src="JS/animate.js"></script>
+    </head>
+	
+	<body>
+    <div data-role="page">
+      
+      <!-- **NAVIGATION HEADER MENU** -->
+      <div data-role="header" class="jqm-header ui-header ui-bar-inherit" role="banner">
+
+          <h1>You Are Here</h1>
+
+          <a href="#sidebar" class="ui-nodisc-icon ui-alt-icon ui-btn-right ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all" data-role="button" role="button">Menu</a>
+
+      </div>
+      
+
+      <!-- **MAIN BODY** -->
+      <div role="main" class="ui-content"></div>
+
+      <!-- ** SIDEBAR PANEL ** -->
+      <div data-role="panel" id="sidebar" data-position="right" data-display="overlay" class="jqm-navmenu-panel ui-panel ui-panel-position-right ui-panel-display-overlay ui-body-a ui-panel-animate ui-panel-open" data-theme="a">
+        <div class="ui-panel-inner">
+          <ul data-role="listview" data-inset="true" class="ui-alt-icon ui-nodisc-icon ui-listview">
+
+            <li data-icon="home" class="ui-mini"><a href="home.html">Home</a></li>
+            <li data-icon="heart" class="ui-mini"><a href="#">Explore</a></li>
+            <li data-icon="navigation" class="ui-mini"><a href="#">Navigate</a></li>
+            <li data-icon="location" class="ui-mini"><a href="#">Maps</a></li>
+            <li data-icon="calendar" class="ui-mini"><a href="#">Events</a></li>
+            <li data-icon="grid" class="ui-mini"><a href="#">Parking</a></li>
+            <li data-icon="alert" class="ui-mini"><a href="#">Alerts</a></li>
+            <li data-icon="info" class="ui-mini"><a href="#">About</a></li>
+
+          </ul>
+        </div>
+
+      </div>
+
+
+      <!-- ** FOOTER ** 
+      <div data-role="footer"></div>
+-->
+
+    </div>
+
+        
+	</body>
+</html>
