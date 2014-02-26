@@ -3539,7 +3539,7 @@ fieldset.ui-controlgroup {
 }
 .ui-content .ui-listview-inset,
 .ui-panel-inner > .ui-listview-inset {
-	margin: 1em 0;
+	margin: -1em;
 }
 .ui-collapsible-content > .ui-listview {
 	margin: -.5em -1em;
@@ -4469,8 +4469,8 @@ textarea.ui-input-text.ui-textinput-autogrow {
 }
 /* Panel */
 .ui-panel {
-	width: 17em;
-	min-height: 100%;
+	width: 12em;
+	height: auto;
 	max-height: none;
 	border-width: 0;
 	position: absolute;
@@ -4696,3 +4696,14 @@ textarea.ui-input-text.ui-textinput-autogrow {
 	position: relative;/* position: relative prevents IE scroll bug (element with position: relative inside container with overflow: auto appear as "fixed") */
 	padding: .2em;
 }
+/* ----------------------------- CUSTOM CSS ----------------------------- */
+/*
+
+* {
+	font-family: 'Open Sans', sans-serif;
+}
+
+#logo {
+	width: 25%;
+    margin: 0 auto;
+}*/

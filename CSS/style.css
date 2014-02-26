@@ -7,18 +7,9 @@
 	font-family: 'Open Sans', sans-serif;
 }
 
-body {
-	margin: 0px;
-}
-
-
 
 /* ----------- MAIN BODY  ----------- */
-#main-wrapper {
-	width: 600px;
-	height: 600px;
+#logo {
+	width: 25%;
+    margin: 0 auto;
 }
-
-
-
-/* ----------- NAVIGATION  ----------- */
