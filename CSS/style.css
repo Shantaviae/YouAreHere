@@ -13,3 +13,26 @@
 	width: 25%;
     margin: 0 auto;
 }
+
+#title {
+	color: RGB(106, 58, 134);
+	font-size: 16pt;
+	text-align: center;
+	font-weight: bold;
+}
+
+.label {
+	color: RGB(106, 58, 134);
+	font-size: 14pt;
+	font-weight: bold;
+}
+
+.eventTextbox{
+	height: 45px;
+}
+
+.goButton{
+	height: 22px;
+	width: 30% !important;
+
+}
