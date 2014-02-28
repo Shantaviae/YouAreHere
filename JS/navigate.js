@@ -3,12 +3,11 @@ function init_map()
 {
 	if (map == undefined) {
 		var map_canvas = document.getElementById('map_canvas');
-		map_canvas.offSetWidth = window.innerWidth;
-		map_canvas.offSetHeight = window.innerHeight;
 		var mapOpts = {
 			center: new google.maps.LatLng(42.054647, -87.677139),
 			zoom: 15,
 			streetViewControl: false,
+			panControl: false,
 			mapTypeId: google.maps.MapTypeId.ROADMAP
 		};
 		var map = new google.maps.Map(map_canvas, mapOpts);
