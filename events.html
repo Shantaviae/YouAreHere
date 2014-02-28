@@ -35,7 +35,7 @@
 					<br/>
 		
 					<fieldset class="ui-grid-a">
-						<div class="ui-block-a" style="width:70%">
+						<div class="ui-block-a" style="width:85%">
 						<select name="browseEvents">
 							<option value="na">Browse Events</option>
 							<option value="aca">Academics</option>
@@ -45,7 +45,7 @@
 							<option value="nl">Night Life</option>
 							<option value="sg">Student Group Events</option>
 						</select></div>
-						<div class="ui-block-b" style="width:30%"><a data-role="button" href="#eventsbrowse" class="goButton">Go!</a></div>
+						<div class="ui-block-b" style="width:15%"><a data-role="button" href="#eventsbrowse" class="goButton">Go!</a></div>
 					</fieldset>					
 				</div>
 				
@@ -58,8 +58,8 @@
 					<br/>
 					<br/>
 					<fieldset class="ui-grid-a">
-						<div class="ui-block-a" style="width:70%"><input class="eventTextbox" type="text" value="Search Events"/></div>
-						<div class="ui-block-b" style="width:30%"><a data-role="button" href="#eventssearch" class="goButton">Go!</a></div>
+						<div class="ui-block-a" style="width:85%"><input class="eventTextbox" type="text" placeholder="Search Events"/></div>
+						<div class="ui-block-b" style="width:15%"><a data-role="button" href="#eventssearch" class="goButton">Go!</a></div>
 					</fieldset>
 				</div>
 			</form>
@@ -86,7 +86,7 @@
       </div>
 	  
 	  
-	  <!-- Start of events page -->
+	  <!-- Start of events browse page -->
       <div data-role="page"  id="eventsbrowse">
         
         <!-- **NAVIGATION HEADER MENU** -->
@@ -98,8 +98,48 @@
         
         <!-- **MAIN BODY** -->
         <div role="main" class="ui-content" style="margin:20px;">
-			Testing
-			Generate browsing results
+			<table style="width: 90%; margin: 0 auto;">
+				<tr>
+					<th class="tableHeaderRows">Category</th>
+					<th class="tableHeaderRows">Event Name</th>
+					<th class="tableHeaderRows">Date</th>
+					<th class="tableHeaderRows">Time</th>
+					<th class="tableHeaderRows">Location</th>
+					<th class="tableHeaderRows">Description</th>
+				<tr/>
+				<tr>
+					<td class="tableRows">Academic</td>
+					<td class="tableRows">Study Hall</td>
+					<td class="tableRows">3/15/2014</td>
+					<td class="tableRows">2:00 PM</td>
+					<td class="tableRows">Tech LR5</td>
+					<td class="tableRows">Blah de de blah blah blah dee la la de la blah klah  blah blha bla aaaaaalllllaaaa</td>
+				<tr/>
+				<tr>
+					<td class="tableRows">Athletic</td>
+					<td class="tableRows">Game</td>
+					<td class="tableRows">3/26/2014</td>
+					<td class="tableRows">11:00 AM</td>
+					<td class="tableRows">Ryan Field</td>
+					<td class="tableRows">Blah de de blah blah blah dee la la de la blah klah  blah blha bla aaaaaalllllaaaa</td>
+				<tr/>
+				<tr>
+					<td class="tableRows">Student Group</td>
+					<td class="tableRows">NSBE</td>
+					<td class="tableRows">3/17/2014</td>
+					<td class="tableRows">1:30 PM</td>
+					<td class="tableRows">Norris</td>
+					<td class="tableRows">Blah de de blah blah blah dee la la de la blah klah  blah blha bla aaaaaalllllaaaa</td>
+				<tr/>
+				<tr>
+					<td class="tableRows">Entertainment</td>
+					<td class="tableRows">ASG Concert</td>
+					<td class="tableRows">3/25/2014</td>
+					<td class="tableRows">9:00 PM</td>
+					<td class="tableRows">Ryan Field</td>
+					<td class="tableRows">Blah de de blah blah blah dee la la de la blah klah  blah blha bla aaaaaalllllaaaa</td>
+				<tr/>
+			</table>
 		
         </div>
 
@@ -135,8 +175,50 @@
         </div>
         
         <!-- **MAIN BODY** -->
-        <div role="main" class="ui-content" style="margin:20px;">
-			Generate search results
+        <div role="main" class="ui-content" style="margin:20px; text-align: center;">
+			
+			<table style="width: 90%; margin: 0 auto;">
+				<tr>
+					<th class="tableHeaderRows">Category</th>
+					<th class="tableHeaderRows">Event Name</th>
+					<th class="tableHeaderRows">Date</th>
+					<th class="tableHeaderRows">Time</th>
+					<th class="tableHeaderRows">Location</th>
+					<th class="tableHeaderRows">Description</th>
+				<tr/>
+				<tr>
+					<td class="tableRows">Academic</td>
+					<td class="tableRows">Study Hall</td>
+					<td class="tableRows">3/15/2014</td>
+					<td class="tableRows">2:00 PM</td>
+					<td class="tableRows">Tech LR5</td>
+					<td class="tableRows">Blah de de blah blah blah dee la la de la blah klah  blah blha bla aaaaaalllllaaaa</td>
+				<tr/>
+				<tr>
+					<td class="tableRows">Athletic</td>
+					<td class="tableRows">Game</td>
+					<td class="tableRows">3/26/2014</td>
+					<td class="tableRows">11:00 AM</td>
+					<td class="tableRows">Ryan Field</td>
+					<td class="tableRows">Blah de de blah blah blah dee la la de la blah klah  blah blha bla aaaaaalllllaaaa</td>
+				<tr/>
+				<tr>
+					<td class="tableRows">Student Group</td>
+					<td class="tableRows">NSBE</td>
+					<td class="tableRows">3/17/2014</td>
+					<td class="tableRows">1:30 PM</td>
+					<td class="tableRows">Norris</td>
+					<td class="tableRows">Blah de de blah blah blah dee la la de la blah klah  blah blha bla aaaaaalllllaaaa</td>
+				<tr/>
+				<tr>
+					<td class="tableRows">Entertainment</td>
+					<td class="tableRows">ASG Concert</td>
+					<td class="tableRows">3/25/2014</td>
+					<td class="tableRows">9:00 PM</td>
+					<td class="tableRows">Ryan Field</td>
+					<td class="tableRows">Blah de de blah blah blah dee la la de la blah klah  blah blha bla aaaaaalllllaaaa</td>
+				<tr/>
+			</table>
 		</div>
 
         <!-- ** SIDEBAR PANEL ** -->
