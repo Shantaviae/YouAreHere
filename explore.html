@@ -16,20 +16,17 @@
 	<body>
 
      <!-- Start of page -->
-      <div data-role="page">
+      <div data-role="page" id="explore">
         
         <!-- **NAVIGATION HEADER MENU** -->
         <div data-role="header" class="jqm-header ui-header ui-bar-inherit" role="banner">
-            <h1> </h1>
+            <a href="index.html" data-rel="back" data-icon="back"> Back</a>
+			<h1>Explore NU</h1>
             <a href="#sidebar" class="ui-nodisc-icon ui-alt-icon ui-btn-right ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all" data-role="button" role="button">Menu</a>
         </div>
         
         <!-- **MAIN BODY** -->
         <div role="main" class="ui-content" style="margin:20px;">
-
-			<div id="title">
-				<h1>Explore NU</h1>
-			</div>
 			<div class="choice_list">
 				<ul data-role="listview" data-inset="true" >
 					<li><a href="#" data-transition="slidedown"><h3>NU Landmarks</h3></a></li>
@@ -44,10 +41,10 @@
           <div class="ui-panel-inner">
             <ul data-role="listview" data-inset="true" class="ui-alt-icon ui-nodisc-icon ui-listview">
               <li data-icon="home" class="ui-mini"><a href="index.html">Home</a></li>
-              <li data-icon="heart" class="ui-mini"><a href="#">Explore</a></li>
-              <li data-icon="navigation" class="ui-mini"><a href="navi.html">Navigate</a></li>
+              <li data-icon="heart" class="ui-mini"><a href="#explore">Explore</a></li>
+              <li data-icon="navigation" class="ui-mini"><a href="#navigation">Navigate</a></li>
               <li data-icon="location" class="ui-mini"><a href="#">Maps</a></li>
-              <li data-icon="calendar" class="ui-mini"><a href="events.html">Events</a></li>
+              <li data-icon="calendar" class="ui-mini"><a href="#events">Events</a></li>
               <li data-icon="grid" class="ui-mini"><a href="#">Parking</a></li>
               <li data-icon="alert" class="ui-mini"><a href="#">Alerts</a></li>
               <li data-icon="info" class="ui-mini"><a href="#">About</a></li>
