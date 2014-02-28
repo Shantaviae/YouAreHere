@@ -21,6 +21,12 @@
 	font-weight: bold;
 }
 
+.label {
+	color: RGB(106, 58, 134);
+	font-size: 14pt;
+	font-weight: bold;
+}
+
 .eventTextbox{
 	height: 45px;
 }
