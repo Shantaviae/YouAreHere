@@ -14,4 +14,16 @@ function init_map()
 		var searchbox = new google.maps.places.SearchBox(document.getElementById('pac-input'));
 	}
 }
-$(document).on("pageshow","#navigation",function(){init_map();});
+$(document).on("pageshow","#navigation",
+				function(){
+					var the_height = ($(window).height() - $(this).find('[data-role="header"]').height() - $(this).find('[data-role="footer"]').height());
+    				$(this).find('[id="map_canvas"]').height(the_height-40);
+    				$(this).find('[id="map_canvas"]').width(
+    					$(this).find('[data-role="header"]').width()-30
+    				);
+    				//console.log($(this).find('[id="map_canvas"]'));
+					init_map();
+				});
+$(document).delegate('#navigation', 'pageshow', function () {
+    
+});
