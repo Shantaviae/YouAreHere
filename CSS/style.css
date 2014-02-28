@@ -27,7 +27,7 @@
 
 .goButton{
 	height: 22px;
-	width: 30% !important;
+	width: 60% !important;
 
 }
 
@@ -74,4 +74,15 @@
 	border: none;
 	box-shadow: none;
 	font-family: Roboto;
+}
+
+.tableHeaderRows {
+	text-align: center; 
+	border-bottom: 4px solid #E9E9E9;
+	color: red;
+	height: 35px;
+}
+
+.tableRows {
+	height: 35px;
 }
