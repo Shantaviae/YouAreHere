@@ -10,8 +10,7 @@
       <link rel="stylesheet" href="CSS/style.css" />
       <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
   		<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-      <script src="http://code.jquery.com/mobile/1.4.1/jquery.mobile-1.4.1.min.js"></script>  
-      <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+      <script src="http://code.jquery.com/mobile/1.4.1/jquery.mobile-1.4.1.min.js"></script> 
       <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=places"></script>
       <script src="JS/navigate.js"></script>
     </head>
@@ -79,8 +78,10 @@
         
         <!-- **MAIN BODY** -->
         <div role="main" class="ui-content">
-        	<input class="controls" id="pac-input" type="text" value="Search"/>
-            <div id="map_canvas" class="ui-content">
+        	<div data-role="fieldcontain" class="pac-container">
+        		<input id="pac-input" type="text" placeholder="Search"/>
+        	</div>
+            <div id="map_canvas">
             </div>
         </div>
 
