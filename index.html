@@ -8,47 +8,9 @@
       <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'> 
       <link rel="stylesheet" href="CSS/jquery.mobile-1.4.1.css" />
       <link rel="stylesheet" href="CSS/style.css" />
-      <style>
-      #map_canvas {
-        width: 500px;
-        height: 400px;
-      }
-      .controls {
-        margin-top: 16px;
-        border: 1px solid transparent;
-        border-radius: 2px 0 0 2px;
-        box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        height: 32px;
-        outline: none;
-        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-      }
-
-      #pac-input {
-        background-color: #fff;
-        padding: 0 11px 0 13px;
-        width: 400px;
-        font-family: Roboto;
-        font-size: 15px;
-        font-weight: 300;
-        text-overflow: ellipsis;
-      }
-
-      #pac-input:focus {
-        border-color: #4d90fe;
-        margin-left: -1px;
-        padding-left: 14px;  /* Regular padding-left + 1. */
-        width: 401px;
-      }
-
-      .pac-container {
-        font-family: Roboto;
-      }
-      </style>
       <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
   		<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-      <script src="http://code.jquery.com/mobile/1.4.1/jquery.mobile-1.4.1.min.js"></script>  
-      <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+      <script src="http://code.jquery.com/mobile/1.4.1/jquery.mobile-1.4.1.min.js"></script> 
       <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=places"></script>
       <script src="JS/navigate.js"></script>
     </head>
@@ -75,11 +37,11 @@
             </div>
 
             <div class="ui-block-b">
-              <a href="#" class="ui-btn">Events @ NU</a>
+              <a href="#events" class="ui-btn">Events @ NU</a>
             </div>
 
             <div class="ui-block-c">
-              <a href="#" class="ui-btn">Explore NU</a>
+              <a href="#explore" class="ui-btn">Explore NU</a>
             </div>
           </fieldset>
         </div>
@@ -89,10 +51,10 @@
           <div class="ui-panel-inner">
             <ul data-role="listview" data-inset="true" class="ui-alt-icon ui-nodisc-icon ui-listview">
               <li data-icon="home" class="ui-mini"><a href="index.html">Home</a></li>
-              <li data-icon="heart" class="ui-mini"><a href="#">Explore</a></li>
+              <li data-icon="heart" class="ui-mini"><a href="#explore">Explore</a></li>
               <li data-icon="navigation" class="ui-mini"><a href="#navigation">Navigate</a></li>
               <li data-icon="location" class="ui-mini"><a href="#">Maps</a></li>
-              <li data-icon="calendar" class="ui-mini"><a href="#">Events</a></li>
+              <li data-icon="calendar" class="ui-mini"><a href="#events">Events</a></li>
               <li data-icon="grid" class="ui-mini"><a href="#">Parking</a></li>
               <li data-icon="alert" class="ui-mini"><a href="#">Alerts</a></li>
               <li data-icon="info" class="ui-mini"><a href="#">About</a></li>
@@ -110,14 +72,15 @@
         
         <!-- **NAVIGATION HEADER MENU** -->
         <div data-role="header" class="jqm-header ui-header ui-bar-inherit" role="banner">
-            <h1> Navigation </h1>
+            <a href="index.html" data-rel="back" data-icon="back"> Back</a>
+			<h1> Navigation </h1>
             <a href="#sidebar" class="ui-nodisc-icon ui-alt-icon ui-btn-right ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all" data-role="button" role="button">Menu</a>
         </div>
         
         <!-- **MAIN BODY** -->
         <div role="main" class="ui-content">
         	<input class="controls" id="pac-input" type="text" value="Search"/>
-            <div id="map_canvas" class="ui-content">
+            <div id="map_canvas" style="width:500px;height:500px">
             </div>
         </div>
 
@@ -126,10 +89,10 @@
           <div class="ui-panel-inner">
             <ul data-role="listview" data-inset="true" class="ui-alt-icon ui-nodisc-icon ui-listview">
               <li data-icon="home" class="ui-mini"><a href="index.html">Home</a></li>
-              <li data-icon="heart" class="ui-mini"><a href="#">Explore</a></li>
-              <li data-icon="navigation" class="ui-mini"><a href="navi.html">Navigate</a></li>
+              <li data-icon="heart" class="ui-mini"><a href="#explore">Explore</a></li>
+              <li data-icon="navigation" class="ui-mini"><a href="#navigation">Navigate</a></li>
               <li data-icon="location" class="ui-mini"><a href="#">Maps</a></li>
-              <li data-icon="calendar" class="ui-mini"><a href="#">Events</a></li>
+              <li data-icon="calendar" class="ui-mini"><a href="#events">Events</a></li>
               <li data-icon="grid" class="ui-mini"><a href="#">Parking</a></li>
               <li data-icon="alert" class="ui-mini"><a href="#">Alerts</a></li>
               <li data-icon="info" class="ui-mini"><a href="#">About</a></li>
