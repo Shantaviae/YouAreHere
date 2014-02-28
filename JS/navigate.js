@@ -24,6 +24,3 @@ $(document).on("pageshow","#navigation",
     				//console.log($(this).find('[id="map_canvas"]'));
 					init_map();
 				});
-$(document).delegate('#navigation', 'pageshow', function () {
-    
-});
